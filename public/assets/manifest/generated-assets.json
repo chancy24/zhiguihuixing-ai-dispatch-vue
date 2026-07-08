@@ -1,0 +1,123 @@
+[
+  {
+    "id": "ai-command-center-premium-v2",
+    "name": "AI轨交调度指挥中心主视觉",
+    "localPath": "/assets/generated/image2/ai-command-center-premium-v2.png",
+    "assetType": "image2-png",
+    "size": "16:9 landscape",
+    "recommendedUsage": "登录页、首页驾驶舱、智能排班页、路演模式主视觉",
+    "sourceNote": "OpenAI image generation, project-local copy"
+  },
+  {
+    "id": "hero-metro-dispatch-blue-white",
+    "name": "登录页蓝白调度主视觉",
+    "localPath": "/assets/generated/image2/hero-metro-dispatch-blue-white.png",
+    "assetType": "image2-png",
+    "size": "1600x900",
+    "recommendedUsage": "登录页、首屏主视觉、项目封面",
+    "sourceNote": "OpenAI image generation, project-local copy"
+  },
+  {
+    "id": "dispatch-center-blue-white",
+    "name": "调度中心蓝白场景图",
+    "localPath": "/assets/generated/image2/dispatch-center-blue-white.png",
+    "assetType": "image2-png",
+    "size": "1600x900",
+    "recommendedUsage": "首页驾驶舱、Agent助手、路演模式",
+    "sourceNote": "OpenAI image generation, project-local copy"
+  },
+  {
+    "id": "timetable-processing",
+    "name": "时刻表数据处理图",
+    "localPath": "/assets/generated/image2/timetable-processing.png",
+    "assetType": "image2-png",
+    "size": "1600x900",
+    "recommendedUsage": "时刻表管理、工作流导入步骤、数据清洗说明",
+    "sourceNote": "OpenAI image generation, project-local copy"
+  },
+  {
+    "id": "crew-scheduling-workbench",
+    "name": "乘务排班工作台图",
+    "localPath": "/assets/generated/image2/crew-scheduling-workbench.png",
+    "assetType": "image2-png",
+    "size": "1600x900",
+    "recommendedUsage": "智能排班优化、方案对比、排班工作流",
+    "sourceNote": "OpenAI image generation, project-local copy"
+  },
+  {
+    "id": "emergency-reschedule",
+    "name": "应急重排场景图",
+    "localPath": "/assets/generated/image2/emergency-reschedule.png",
+    "assetType": "image2-png",
+    "size": "1600x900",
+    "recommendedUsage": "动态重排与应急调度、突发事件影响分析",
+    "sourceNote": "OpenAI image generation, project-local copy"
+  },
+  {
+    "id": "fatigue-risk-dashboard",
+    "name": "疲劳风险预警看板图",
+    "localPath": "/assets/generated/image2/fatigue-risk-dashboard.png",
+    "assetType": "image2-png",
+    "size": "1600x900",
+    "recommendedUsage": "疲劳风险预警、合规校验、管理报告",
+    "sourceNote": "OpenAI image generation, project-local copy"
+  },
+  {
+    "id": "opc-co-creation-ecosystem",
+    "name": "OPC共创生态图",
+    "localPath": "/assets/generated/image2/opc-co-creation-ecosystem.png",
+    "assetType": "image2-png",
+    "size": "1600x900",
+    "recommendedUsage": "OPC赋能页、路演结尾、商业价值说明",
+    "sourceNote": "OpenAI image generation, project-local copy"
+  },
+  {
+    "id": "agent-workflow-blue-white",
+    "name": "Agent工作流补充图",
+    "localPath": "/assets/generated/image2/agent-workflow-blue-white.png",
+    "assetType": "image2-png",
+    "size": "1600x900",
+    "recommendedUsage": "排班Agent助手、自然语言调度建议、工作流说明",
+    "sourceNote": "OpenAI image generation, project-local copy"
+  },
+  {
+    "id": "line10-system-map",
+    "name": "10号线简化环线 SVG",
+    "localPath": "/assets/generated/svg/line10-system-map.svg",
+    "assetType": "self-drawn-svg",
+    "recommendedUsage": "线路基础管理、公开图 fallback、线路拓扑背景",
+    "sourceNote": "Project self-drawn SVG, copyright safe"
+  },
+  {
+    "id": "timetable-flow",
+    "name": "时刻表处理流程 SVG",
+    "localPath": "/assets/generated/svg/timetable-flow.svg",
+    "assetType": "self-drawn-svg",
+    "recommendedUsage": "时刻表管理、数据处理说明、GTFS结构替代图",
+    "sourceNote": "Project self-drawn SVG, copyright safe"
+  },
+  {
+    "id": "scheduling-rule-engine",
+    "name": "排班规则引擎 SVG",
+    "localPath": "/assets/generated/svg/scheduling-rule-engine.svg",
+    "assetType": "self-drawn-svg",
+    "recommendedUsage": "规则校验、片段划分、AI排班解释",
+    "sourceNote": "Project self-drawn SVG, copyright safe"
+  },
+  {
+    "id": "agent-workflow",
+    "name": "Agent工作流 SVG",
+    "localPath": "/assets/generated/svg/agent-workflow.svg",
+    "assetType": "self-drawn-svg",
+    "recommendedUsage": "Agent助手、演示说明、调度员确认流程",
+    "sourceNote": "Project self-drawn SVG, copyright safe"
+  },
+  {
+    "id": "project-evidence-wall",
+    "name": "项目基础证据墙 SVG",
+    "localPath": "/assets/generated/svg/project-evidence-wall.svg",
+    "assetType": "self-drawn-svg",
+    "recommendedUsage": "项目基础、资料证据墙、路演可信度说明",
+    "sourceNote": "Project self-drawn SVG, copyright safe"
+  }
+]

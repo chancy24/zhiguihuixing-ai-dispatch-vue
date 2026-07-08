@@ -1,0 +1,20 @@
+{
+  "id": "line10-key-stations-public-reference",
+  "name": "北京地铁10号线重点站公开信息参考",
+  "sourceUrl": "https://en.wikipedia.org/wiki/Line_10_(Beijing_Subway)",
+  "licenseNote": "百科类公开资料参考；页面展示建议使用自有整理数据并保留来源说明。",
+  "note": "本文件仅登记本项目演示中会高亮的重点站，不声明为完整运营数据。",
+  "stations": [
+    { "name": "巴沟", "role": "出退勤点示意", "displayInSvg": true },
+    { "name": "知春路", "role": "换乘站示意", "displayInSvg": true },
+    { "name": "三元桥", "role": "换乘站示意", "displayInSvg": true },
+    { "name": "国贸", "role": "换乘站示意", "displayInSvg": true },
+    { "name": "宋家庄", "role": "出退勤点示意", "displayInSvg": true },
+    { "name": "角门西", "role": "换乘站示意", "displayInSvg": true },
+    { "name": "首经贸", "role": "换乘站示意", "displayInSvg": true },
+    { "name": "六里桥", "role": "换乘站示意", "displayInSvg": true },
+    { "name": "公主坟", "role": "换乘站示意", "displayInSvg": true },
+    { "name": "车道沟", "role": "普通站示意", "displayInSvg": true },
+    { "name": "火器营", "role": "出退勤点示意", "displayInSvg": true }
+  ]
+}

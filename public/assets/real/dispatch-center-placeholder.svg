@@ -1,0 +1,48 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" fill="none">
+  <defs>
+    <style>
+      text { font-family: "Microsoft YaHei", "PingFang SC", sans-serif; }
+    </style>
+  </defs>
+  <rect width="800" height="450" fill="#f1f5f9"/>
+
+  <!-- Wall panels -->
+  <rect x="20" y="20" width="760" height="80" rx="6" fill="#ffffff" stroke="#e2e8f0" stroke-width="1"/>
+  <text x="400" y="52" text-anchor="middle" font-size="16" font-weight="bold" fill="#1a3a6b">北京轨道交通运营调度中心</text>
+  <text x="400" y="74" text-anchor="middle" font-size="12" fill="#64748b">Beijing Metro Operation Control Center — 路演演示用</text>
+
+  <!-- Map screen -->
+  <rect x="20" y="115" width="500" height="280" rx="6" fill="#ffffff" stroke="#e2e8f0" stroke-width="1"/>
+  <rect x="30" y="125" width="480" height="260" rx="4" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1"/>
+  <text x="270" y="240" text-anchor="middle" font-size="14" fill="#94a3b8">线路运行状态监控</text>
+  <text x="270" y="262" text-anchor="middle" font-size="11" fill="#94a3b8">10号线 · 列车实时位置追踪</text>
+  <!-- Simplified track lines on monitor -->
+  <ellipse cx="270" cy="300" rx="180" ry="60" stroke="#1565c0" stroke-width="2" fill="none"/>
+  <circle cx="270" cy="300" r="30" fill="#1565c0" opacity="0.08" stroke="#1565c0" stroke-width="1"/>
+  <text x="270" y="305" text-anchor="middle" font-size="10" fill="#1565c0">10号线</text>
+  <!-- Status indicators -->
+  <rect x="45" y="135" width="10" height="10" rx="5" fill="#22c55e"/>
+  <text x="60" y="144" font-size="10" fill="#64748b">正常运行 · 早高峰</text>
+
+  <!-- Side panels -->
+  <rect x="535" y="115" width="245" height="135" rx="6" fill="#ffffff" stroke="#e2e8f0" stroke-width="1"/>
+  <text x="657" y="140" text-anchor="middle" font-size="13" font-weight="bold" fill="#1a3a6b">今日排班状态</text>
+  <rect x="550" y="152" width="215" height="25" rx="4" fill="#f0f9ff"/>
+  <text x="560" y="169" font-size="10" fill="#1565c0">待排片段: 12</text>
+  <rect x="550" y="182" width="215" height="25" rx="4" fill="#fef3c7"/>
+  <text x="560" y="199" font-size="10" fill="#d97706">待处理冲突: 3</text>
+  <rect x="550" y="212" width="215" height="25" rx="4" fill="#fef2f2"/>
+  <text x="560" y="229" font-size="10" fill="#dc2626">高风险人员: 2</text>
+
+  <rect x="535" y="260" width="245" height="135" rx="6" fill="#ffffff" stroke="#e2e8f0" stroke-width="1"/>
+  <text x="657" y="285" text-anchor="middle" font-size="13" font-weight="bold" fill="#1a3a6b">最近操作日志</text>
+  <text x="550" y="308" font-size="10" fill="#64748b">09:30 完成时刻表导入</text>
+  <text x="550" y="326" font-size="10" fill="#64748b">09:32 完成站名转换</text>
+  <text x="550" y="344" font-size="10" fill="#64748b">09:35 完成内外环分类</text>
+  <text x="550" y="362" font-size="10" fill="#64748b">09:38 生成乘务片段</text>
+  <text x="550" y="380" font-size="10" fill="#ef4444">09:40 发现3处规则风险</text>
+
+  <!-- Bottom bar -->
+  <rect x="20" y="410" width="760" height="25" rx="4" fill="#ffffff" stroke="#e2e8f0" stroke-width="1"/>
+  <text x="60" y="427" font-size="9" fill="#94a3b8">本图为路演演示占位图 · 非真实调度中心照片 · AI建议仅供辅助，最终方案需由调度员复核确认</text>
+</svg>

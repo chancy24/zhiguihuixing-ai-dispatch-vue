@@ -1,0 +1,70 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 360" fill="none">
+  <defs>
+    <style>
+      text { font-family: "Microsoft YaHei", "PingFang SC", sans-serif; }
+    </style>
+    <marker id="arrowBlue" markerWidth="8" markerHeight="8" refX="6" refY="4" orient="auto">
+      <path d="M0,0 L8,4 L0,8 Z" fill="#1565c0"/>
+    </marker>
+  </defs>
+  <rect width="900" height="360" fill="#ffffff"/>
+  <text x="450" y="30" text-anchor="middle" font-size="18" font-weight="bold" fill="#1a3a6b">时刻表数据处理流程：原始数据 → 清洗 → 乘务片段</text>
+
+  <!-- 阶段1：原始时刻表 -->
+  <rect x="30" y="70" width="250" height="220" rx="8" fill="#f8fafc" stroke="#e2e8f0" stroke-width="1.5"/>
+  <rect x="30" y="70" width="250" height="32" rx="8" fill="#1565c0"/>
+  <rect x="30" y="90" width="250" height="12" fill="#1565c0"/>
+  <text x="155" y="91" text-anchor="middle" font-size="13" font-weight="bold" fill="#fff">① 原始时刻表 PR2003.xls</text>
+  <text x="50" y="125" font-size="11" fill="#64748b">服务号  车次  起点  终点</text>
+  <line x1="45" y1="132" x2="265" y2="132" stroke="#cbd5e1" stroke-width="1"/>
+  <text x="50" y="150" font-size="11" fill="#1e293b">S1001  10-041  BG   SJZ</text>
+  <text x="50" y="170" font-size="11" fill="#1e293b">S1002  10-052  WLPL GM</text>
+  <text x="50" y="190" font-size="11" fill="#1e293b">S1003  10-066  GZF  SYQ</text>
+  <text x="50" y="210" font-size="11" fill="#1e293b">S1004  10-081  SJZ  BG</text>
+  <text x="50" y="230" font-size="11" fill="#94a3b8">... 共 12 条缩写记录</text>
+  <rect x="45" y="248" width="220" height="28" rx="4" fill="#fffbeb" stroke="#fde68a" stroke-width="1"/>
+  <text x="155" y="266" text-anchor="middle" font-size="11" fill="#92400e">⚠ 站名缩写需转换 · 缺内外环标识</text>
+
+  <!-- 箭头1 -->
+  <line x1="285" y1="180" x2="325" y2="180" stroke="#1565c0" stroke-width="2" marker-end="url(#arrowBlue)"/>
+  <text x="305" y="172" text-anchor="middle" font-size="10" fill="#1565c0">站名转换</text>
+  <text x="305" y="195" text-anchor="middle" font-size="10" fill="#64748b">内外环分类</text>
+
+  <!-- 阶段2：清洗后数据 -->
+  <rect x="330" y="70" width="250" height="220" rx="8" fill="#f0f9ff" stroke="#90caf9" stroke-width="1.5"/>
+  <rect x="330" y="70" width="250" height="32" rx="8" fill="#1e88e5"/>
+  <rect x="330" y="90" width="250" height="12" fill="#1e88e5"/>
+  <text x="455" y="91" text-anchor="middle" font-size="13" font-weight="bold" fill="#fff">② 清洗后数据</text>
+  <text x="350" y="125" font-size="11" fill="#64748b">车次   起点→终点       方向</text>
+  <line x1="345" y1="132" x2="565" y2="132" stroke="#90caf9" stroke-width="1"/>
+  <text x="350" y="150" font-size="11" fill="#1e293b">10-041  巴沟→宋家庄     内环</text>
+  <text x="350" y="170" font-size="11" fill="#1e293b">10-052  五路→国贸       内环</text>
+  <text x="350" y="190" font-size="11" fill="#1e293b">10-066  公主坟→三元桥   内环</text>
+  <text x="350" y="210" font-size="11" fill="#1e293b">10-081  宋家庄→巴沟     外环</text>
+  <text x="350" y="230" font-size="11" fill="#94a3b8">... 站名已中文化</text>
+  <rect x="345" y="248" width="220" height="28" rx="4" fill="#f0fdf4" stroke="#bbf7d0" stroke-width="1"/>
+  <text x="455" y="266" text-anchor="middle" font-size="11" fill="#15803d">✓ 站名标准化 · 内外环已标注</text>
+
+  <!-- 箭头2 -->
+  <line x1="585" y1="180" x2="625" y2="180" stroke="#1565c0" stroke-width="2" marker-end="url(#arrowBlue)"/>
+  <text x="605" y="172" text-anchor="middle" font-size="10" fill="#1565c0">片段划分</text>
+  <text x="605" y="195" text-anchor="middle" font-size="10" fill="#64748b">规则校验</text>
+
+  <!-- 阶段3：乘务片段 -->
+  <rect x="630" y="70" width="250" height="220" rx="8" fill="#f8fafc" stroke="#e2e8f0" stroke-width="1.5"/>
+  <rect x="630" y="70" width="250" height="32" rx="8" fill="#0d47a1"/>
+  <rect x="630" y="90" width="250" height="12" fill="#0d47a1"/>
+  <text x="755" y="91" text-anchor="middle" font-size="13" font-weight="bold" fill="#fff">③ 乘务片段</text>
+  <text x="650" y="125" font-size="11" fill="#64748b">片段ID  班型   出勤→退勤</text>
+  <line x1="645" y1="132" x2="865" y2="132" stroke="#cbd5e1" stroke-width="1"/>
+  <text x="650" y="150" font-size="11" fill="#1e293b">AUTO-001 早班  巴沟→宋家庄</text>
+  <text x="650" y="170" font-size="11" fill="#1e293b">AUTO-003 白班  公主坟→三元桥</text>
+  <text x="650" y="190" font-size="11" fill="#dc2626">AUTO-005 夜班  国贸→巴沟 ⚠</text>
+  <text x="650" y="210" font-size="11" fill="#1e293b">AUTO-007 夜班  宋家庄→五路</text>
+  <text x="650" y="230" font-size="11" fill="#94a3b8">... 共 7 个合规片段</text>
+  <rect x="645" y="248" width="220" height="28" rx="4" fill="#fef2f2" stroke="#fecaca" stroke-width="1"/>
+  <text x="755" y="266" text-anchor="middle" font-size="11" fill="#b91c1c">⚠ 3 处间休/工时风险待复核</text>
+
+  <!-- 底部说明 -->
+  <text x="450" y="335" text-anchor="middle" font-size="10" fill="#94a3b8">演示示意图 · 基于北京地铁10号线模拟时刻表数据 · 非真实运营数据</text>
+</svg>

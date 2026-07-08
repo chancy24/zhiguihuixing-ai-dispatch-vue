@@ -1,0 +1,72 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 760" fill="none">
+  <defs>
+    <style>
+      text { font-family: "Microsoft YaHei", "PingFang SC", sans-serif; }
+      @keyframes pulseRed { 0%,100% { opacity: 0.45; } 50% { opacity: 0.9; } }
+      .impact { animation: pulseRed 1.8s ease-in-out infinite; }
+    </style>
+  </defs>
+  <rect width="760" height="760" fill="#ffffff"/>
+  <text x="380" y="34" text-anchor="middle" font-size="20" font-weight="bold" fill="#1a3a6b">应急重排影响范围 · 北京地铁10号线环线</text>
+  <text x="380" y="56" text-anchor="middle" font-size="12" fill="#64748b">事件触发后高亮受影响片段与站点</text>
+
+  <!-- 影响范围环带 -->
+  <circle cx="380" cy="400" r="320" fill="#fef2f2" class="impact"/>
+  <circle cx="380" cy="400" r="300" stroke="#dc2626" stroke-width="2" fill="none" stroke-dasharray="6 6" class="impact"/>
+
+  <!-- 主环线 -->
+  <circle cx="380" cy="400" r="300" stroke="#1565c0" stroke-width="6" fill="none" opacity="0.2"/>
+  <circle cx="380" cy="400" r="300" stroke="#1565c0" stroke-width="3" fill="none"/>
+
+  <!-- 受影响弧段（国贸-双井-劲松-潘家园 红色高亮） -->
+  <path d="M 545,440 A 300,300 0 0 1 510,540" stroke="#dc2626" stroke-width="8" fill="none"/>
+
+  <!-- 事件发生点：国贸 -->
+  <circle cx="555" cy="415" r="16" fill="#dc2626" stroke="#fff" stroke-width="3"/>
+  <circle cx="555" cy="415" r="26" fill="none" stroke="#dc2626" stroke-width="2" class="impact"/>
+  <text x="555" y="396" text-anchor="middle" font-size="13" font-weight="bold" fill="#b91c1c">国贸</text>
+  <text x="555" y="455" text-anchor="middle" font-size="10" fill="#b91c1c">事件发生</text>
+
+  <!-- 受影响站点 -->
+  <circle cx="540" cy="475" r="9" fill="#dc2626" stroke="#fff" stroke-width="2"/>
+  <text x="560" y="480" text-anchor="start" font-size="11" fill="#b91c1c">双井</text>
+  <circle cx="510" cy="535" r="9" fill="#dc2626" stroke="#fff" stroke-width="2"/>
+  <text x="528" y="540" text-anchor="start" font-size="11" fill="#b91c1c">劲松</text>
+  <circle cx="470" cy="575" r="9" fill="#dc2626" stroke="#fff" stroke-width="2"/>
+  <text x="488" y="580" text-anchor="start" font-size="11" fill="#b91c1c">潘家园</text>
+
+  <!-- 出退勤点（正常站，蓝色） -->
+  <circle cx="220" cy="175" r="11" fill="#1565c0" stroke="#fff" stroke-width="2"/>
+  <text x="220" y="160" text-anchor="middle" font-size="12" font-weight="bold" fill="#1a3a6b">巴沟</text>
+  <circle cx="380" cy="560" r="11" fill="#1565c0" stroke="#fff" stroke-width="2"/>
+  <text x="380" y="582" text-anchor="middle" font-size="12" font-weight="bold" fill="#1a3a6b">宋家庄</text>
+  <circle cx="235" cy="265" r="11" fill="#1565c0" stroke="#fff" stroke-width="2"/>
+  <text x="213" y="275" text-anchor="end" font-size="11" font-weight="bold" fill="#1a3a6b">公主坟</text>
+
+  <!-- 替补建议方向 -->
+  <path d="M 380,560 Q 470,620 510,540" stroke="#16a34a" stroke-width="2" fill="none" stroke-dasharray="5 5" marker-end="url(#arrGreen3)"/>
+  <defs>
+    <marker id="arrGreen3" markerWidth="8" markerHeight="8" refX="6" refY="4" orient="auto">
+      <path d="M0,0 L8,4 L0,8 Z" fill="#16a34a"/>
+    </marker>
+  </defs>
+
+  <!-- 中心标识 -->
+  <rect x="325" y="382" width="110" height="30" rx="6" fill="#1565c0"/>
+  <text x="380" y="402" text-anchor="middle" font-size="12" font-weight="bold" fill="#fff">10号线·环线</text>
+
+  <!-- 图例 -->
+  <rect x="30" y="640" width="700" height="100" rx="8" fill="#f8fafc" stroke="#e2e8f0"/>
+  <text x="55" y="664" font-size="11" fill="#64748b">图例：</text>
+  <circle cx="125" cy="660" r="7" fill="#dc2626" stroke="#fff" stroke-width="2"/>
+  <text x="138" y="664" font-size="11" fill="#b91c1c">受影响站点/片段</text>
+  <circle cx="265" cy="660" r="7" fill="#1565c0" stroke="#fff" stroke-width="2"/>
+  <text x="278" y="664" font-size="11" fill="#64748b">出退勤点</text>
+  <line x1="345" y1="660" x2="380" y2="660" stroke="#16a34a" stroke-width="2" stroke-dasharray="5 5"/>
+  <text x="388" y="664" font-size="11" fill="#15803d">替补建议方向</text>
+  <circle cx="510" cy="660" r="7" fill="none" stroke="#dc2626" stroke-width="2" stroke-dasharray="3 3"/>
+  <text x="523" y="664" font-size="11" fill="#64748b">影响范围</text>
+  <text x="55" y="690" font-size="10" fill="#94a3b8">事件示例：早高峰2名乘务员请假，影响国贸-潘家园区间3个内环片段，启用备班人员替补。</text>
+  <text x="55" y="708" font-size="10" fill="#94a3b8">AI建议仅供辅助，最终方案需由调度员复核确认。</text>
+  <text x="55" y="726" font-size="10" fill="#94a3b8">示意图 · 非真实运营数据 · 用于路演演示应急重排影响范围</text>
+</svg>
