@@ -1,0 +1,110 @@
+[
+  {
+    "id": "beijing-rail-transit-config-sierraqin",
+    "name": "北京轨道交通线路配置 SVG 源图",
+    "fileName": "beijing-rail-transit-config-sierraqin.svg",
+    "localPath": "/assets/real/subway/beijing-rail-transit-config-sierraqin.svg",
+    "sourceTitle": "SierraQin/metro MTR2.svg",
+    "sourceUrl": "https://github.com/SierraQin/metro",
+    "licenseNote": "CC BY-SA 4.0；使用时需要保留来源与许可说明。",
+    "usageRisk": "low；GitHub 仓库和 SVG metadata 明确许可，需署名并遵守相同方式共享。",
+    "usedInPage": "登录页、首页驾驶舱、线路基础管理、路演模式",
+    "fallbackPlan": "line10-system-map.svg"
+  },
+  {
+    "id": "line10-map-public-svg",
+    "name": "北京地铁10号线公开SVG线路图",
+    "fileName": "line10-map-public.svg",
+    "localPath": "/assets/real/line10/line10-map-public.svg",
+    "sourceTitle": "File:Beijing Subway Maps - Line 10.svg",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Beijing_Subway_Maps_-_Line_10.svg",
+    "licenseNote": "CC BY-SA 3.0；使用时需要保留来源与许可说明。",
+    "usageRisk": "low；Wikimedia Commons 明确许可，需署名。",
+    "usedInPage": "线路基础管理、路演模式、线路示意证据卡片",
+    "fallbackPlan": "line10-system-map.svg"
+  },
+  {
+    "id": "line10-map-reference",
+    "name": "北京地铁10号线车厢线路图参考",
+    "fileName": "line10-map-reference.jpeg",
+    "localPath": "/assets/real/line10/line10-map-reference.jpeg",
+    "sourceTitle": "File:Route Map of Beijing Subway Line 10, 20130819.jpeg",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Route_Map_of_Beijing_Subway_Line_10,_20130819.jpeg",
+    "licenseNote": "CC BY-SA 3.0；使用时需要保留来源与许可说明。",
+    "usageRisk": "low；Wikimedia Commons 明确许可，需署名。",
+    "usedInPage": "线路基础管理、行业背景、公开资料证据卡片",
+    "fallbackPlan": "line10-system-map.svg"
+  },
+  {
+    "id": "line10-train-01",
+    "name": "北京地铁10号线列车公开图",
+    "fileName": "line10-train-01.jpg",
+    "localPath": "/assets/real/train/line10-train-01.jpg",
+    "sourceTitle": "File:Beijing Subway Line 10 Train 20130911.JPG",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Beijing_Subway_Line_10_Train_20130911.JPG",
+    "licenseNote": "CC BY-SA 3.0；使用时需要保留来源与许可说明。",
+    "usageRisk": "low；Wikimedia Commons 明确许可，需署名。",
+    "usedInPage": "登录页、行业背景、路演模式",
+    "fallbackPlan": "hero-metro-dispatch-blue-white.png"
+  },
+  {
+    "id": "line10-station-platform-01",
+    "name": "北京地铁10号线角门西站台公开图",
+    "fileName": "line10-station-platform-01.jpg",
+    "localPath": null,
+    "sourceTitle": "File:Beijing Subway - Line 10 - Jiaomen West Station - Line 10 platform.JPG",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Beijing_Subway_-_Line_10_-_Jiaomen_West_Station_-_Line_10_platform.JPG",
+    "licenseNote": "CC BY-SA 3.0；来源已确认，但本次因 Wikimedia 临时限流未下载。",
+    "usageRisk": "source-only；稍后可重试下载，当前使用 fallback。",
+    "usedInPage": "行业痛点、线路基础管理",
+    "fallbackPlan": "hero-metro-dispatch-blue-white.png"
+  },
+  {
+    "id": "line10-station-platform-02",
+    "name": "北京地铁10号线六里桥站台公开图",
+    "fileName": "line10-station-platform-02.jpg",
+    "localPath": null,
+    "sourceTitle": "File:Beijing Subway - Line 10 - Liuliqiao Station - Line 10 platform.JPG",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Beijing_Subway_-_Line_10_-_Liuliqiao_Station_-_Line_10_platform.JPG",
+    "licenseNote": "CC BY-SA 3.0；来源已确认，但本次因 Wikimedia 临时限流未下载。",
+    "usageRisk": "source-only；稍后可重试下载，当前使用 fallback。",
+    "usedInPage": "线路基础管理、公开资料证据卡片",
+    "fallbackPlan": "line10-platform.svg"
+  },
+  {
+    "id": "openstreetmap-line10-reference",
+    "name": "OpenStreetMap 北京地铁10号线关系参考",
+    "fileName": null,
+    "localPath": null,
+    "sourceTitle": "OpenStreetMap search: Beijing Subway Line 10",
+    "sourceUrl": "https://www.openstreetmap.org/search?query=Beijing%20Subway%20Line%2010",
+    "licenseNote": "ODbL；本次仅作为公开数据参考，不直接导出图片。",
+    "usageRisk": "source-only；避免导出图署名不完整。",
+    "usedInPage": "线路基础管理数据依据",
+    "fallbackPlan": "line10-system-map.svg"
+  },
+  {
+    "id": "gtfs-structure-reference",
+    "name": "GTFS 数据结构公开说明参考",
+    "fileName": null,
+    "localPath": null,
+    "sourceTitle": "GTFS Schedule Reference",
+    "sourceUrl": "https://gtfs.org/schedule/reference/",
+    "licenseNote": "公开文档；本次仅作为结构参考，不下载为图片。",
+    "usageRisk": "source-only；使用自绘流程图替代截图。",
+    "usedInPage": "时刻表管理说明",
+    "fallbackPlan": "timetable-flow.svg"
+  },
+  {
+    "id": "dispatch-center-reference",
+    "name": "调度中心公开照片待替换",
+    "fileName": null,
+    "localPath": null,
+    "sourceTitle": "No clear-license dispatch center photo selected",
+    "sourceUrl": null,
+    "licenseNote": "建议使用项目自有调研照片或 image2 生成图。",
+    "usageRisk": "not-downloaded；避免使用版权不明调度中心照片。",
+    "usedInPage": "首页驾驶舱、Agent助手、路演模式",
+    "fallbackPlan": "dispatch-center-blue-white.png"
+  }
+]

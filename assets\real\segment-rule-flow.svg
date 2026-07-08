@@ -1,0 +1,53 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 980 200" fill="none">
+  <defs>
+    <style>
+      text { font-family: "Microsoft YaHei", "PingFang SC", sans-serif; }
+    </style>
+    <marker id="arrBlue2" markerWidth="8" markerHeight="8" refX="6" refY="4" orient="auto">
+      <path d="M0,0 L8,4 L0,8 Z" fill="#1565c0"/>
+    </marker>
+  </defs>
+  <rect width="980" height="200" fill="#ffffff"/>
+  <text x="490" y="26" text-anchor="middle" font-size="14" font-weight="bold" fill="#1a3a6b">乘务片段划分与规则校验流程</text>
+
+  <!-- 步骤节点 -->
+  <g font-size="11">
+    <rect x="20" y="70" width="130" height="60" rx="8" fill="#e3f2fd" stroke="#90caf9" stroke-width="1.5"/>
+    <text x="85" y="95" text-anchor="middle" font-size="12" font-weight="bold" fill="#1565c0">时刻表数据</text>
+    <text x="85" y="112" text-anchor="middle" font-size="10" fill="#64748b">已清洗中文站名</text>
+
+    <rect x="180" y="70" width="130" height="60" rx="8" fill="#e3f2fd" stroke="#90caf9" stroke-width="1.5"/>
+    <text x="245" y="95" text-anchor="middle" font-size="12" font-weight="bold" fill="#1565c0">片段划分</text>
+    <text x="245" y="112" text-anchor="middle" font-size="10" fill="#64748b">交路衔接切分</text>
+
+    <rect x="340" y="70" width="130" height="60" rx="8" fill="#fffbeb" stroke="#fde68a" stroke-width="1.5"/>
+    <text x="405" y="95" text-anchor="middle" font-size="12" font-weight="bold" fill="#92400e">早白夜班识别</text>
+    <text x="405" y="112" text-anchor="middle" font-size="10" fill="#64748b">按起始时间</text>
+
+    <rect x="500" y="70" width="130" height="60" rx="8" fill="#fffbeb" stroke="#fde68a" stroke-width="1.5"/>
+    <text x="565" y="95" text-anchor="middle" font-size="12" font-weight="bold" fill="#92400e">间休校验</text>
+    <text x="565" y="112" text-anchor="middle" font-size="10" fill="#64748b">≥25min / ≤150min</text>
+
+    <rect x="660" y="70" width="130" height="60" rx="8" fill="#fffbeb" stroke="#fde68a" stroke-width="1.5"/>
+    <text x="725" y="95" text-anchor="middle" font-size="12" font-weight="bold" fill="#92400e">出退勤地点校验</text>
+    <text x="725" y="112" text-anchor="middle" font-size="10" fill="#64748b">巴沟/宋家庄等</text>
+
+    <rect x="820" y="70" width="140" height="60" rx="8" fill="#f0fdf4" stroke="#bbf7d0" stroke-width="1.5"/>
+    <text x="890" y="95" text-anchor="middle" font-size="12" font-weight="bold" fill="#15803d">生成合规结果</text>
+    <text x="890" y="112" text-anchor="middle" font-size="10" fill="#64748b">合规/不合规+原因</text>
+  </g>
+
+  <!-- 箭头 -->
+  <g stroke="#1565c0" stroke-width="2" marker-end="url(#arrBlue2)">
+    <line x1="150" y1="100" x2="178" y2="100"/>
+    <line x1="310" y1="100" x2="338" y2="100"/>
+    <line x1="470" y1="100" x2="498" y2="100"/>
+    <line x1="630" y1="100" x2="658" y2="100"/>
+    <line x1="790" y1="100" x2="818" y2="100"/>
+  </g>
+
+  <!-- 规则约束说明 -->
+  <rect x="20" y="150" width="940" height="34" rx="6" fill="#f8fafc" stroke="#e2e8f0"/>
+  <text x="490" y="170" text-anchor="middle" font-size="11" fill="#64748b">硬约束：连续工作 ≤ 240min · 间休 ≥ 25min · 单日累计 ≤ 480min · 里程 ≤ 90km · 出退勤须为指定地点</text>
+  <text x="490" y="186" text-anchor="middle" font-size="10" fill="#94a3b8">校验不通过片段标记"不合规"并附原因，需调度员复核后调整交路或补充备用人员</text>
+</svg>

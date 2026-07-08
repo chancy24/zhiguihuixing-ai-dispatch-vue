@@ -1,0 +1,74 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 640" fill="none">
+  <defs>
+    <style>
+      text { font-family: "Microsoft YaHei", "PingFang SC", sans-serif; }
+    </style>
+  </defs>
+  <rect width="800" height="640" fill="#ffffff"/>
+  <text x="400" y="34" text-anchor="middle" font-size="20" font-weight="bold" fill="#1a3a6b">北京地铁线网抽象示意图</text>
+  <text x="400" y="56" text-anchor="middle" font-size="12" fill="#64748b">Beijing Subway Network — 拓扑示意（非实际地理走向）· 10号线为环线</text>
+
+  <!-- 10号线环线（核心） -->
+  <circle cx="400" cy="340" r="200" stroke="#1565c0" stroke-width="7" fill="none"/>
+  <circle cx="400" cy="340" r="200" stroke="#1e88e5" stroke-width="2" fill="none" opacity="0.5"/>
+
+  <!-- 1号线（横贯） -->
+  <line x1="60" y1="340" x2="740" y2="340" stroke="#c62828" stroke-width="5"/>
+  <!-- 2号线（内环小圈，示意） -->
+  <circle cx="400" cy="340" r="90" stroke="#1565c0" stroke-width="4" fill="none" stroke-dasharray="2 6" opacity="0.4"/>
+  <!-- 4号线（南北纵贯左） -->
+  <line x1="300" y1="80" x2="300" y2="600" stroke="#00897b" stroke-width="5"/>
+  <!-- 5号线（南北纵贯右） -->
+  <line x1="500" y1="80" x2="500" y2="600" stroke="#6a1b9a" stroke-width="5"/>
+  <!-- 13号线（顶部弧） -->
+  <path d="M200,180 Q400,90 600,180" stroke="#f9a825" stroke-width="5" fill="none"/>
+  <!-- 机场线 -->
+  <line x1="600" y1="200" x2="740" y2="120" stroke="#b71c1c" stroke-width="4" stroke-dasharray="8 6"/>
+
+  <!-- 关键换乘站 -->
+  <g>
+    <!-- 巴沟 -->
+    <circle cx="312" cy="240" r="11" fill="#fff" stroke="#1565c0" stroke-width="4"/>
+    <text x="312" y="222" text-anchor="middle" font-size="12" font-weight="bold" fill="#1a3a6b">巴沟</text>
+    <!-- 国贸 (1号线交点) -->
+    <circle cx="540" cy="340" r="11" fill="#fff" stroke="#c62828" stroke-width="4"/>
+    <text x="540" y="324" text-anchor="middle" font-size="12" font-weight="bold" fill="#c62828">国贸</text>
+    <!-- 公主坟 (1号线交点左) -->
+    <circle cx="260" cy="340" r="11" fill="#fff" stroke="#c62828" stroke-width="4"/>
+    <text x="260" y="364" text-anchor="middle" font-size="12" font-weight="bold" fill="#c62828">公主坟</text>
+    <!-- 海淀黄庄 (4号线) -->
+    <circle cx="300" cy="300" r="9" fill="#fff" stroke="#00897b" stroke-width="3"/>
+    <text x="270" y="295" text-anchor="end" font-size="10" fill="#00897b">海淀黄庄</text>
+    <!-- 宋家庄 -->
+    <circle cx="400" cy="540" r="11" fill="#fff" stroke="#1565c0" stroke-width="4"/>
+    <text x="400" y="562" text-anchor="middle" font-size="12" font-weight="bold" fill="#1a3a6b">宋家庄</text>
+    <!-- 三元桥 -->
+    <circle cx="540" cy="220" r="9" fill="#fff" stroke="#1565c0" stroke-width="3"/>
+    <text x="556" y="216" text-anchor="start" font-size="10" fill="#1565c0">三元桥</text>
+    <!-- 知春路 (13号线) -->
+    <circle cx="340" cy="160" r="9" fill="#fff" stroke="#f9a825" stroke-width="3"/>
+    <text x="340" y="148" text-anchor="middle" font-size="10" fill="#f57f17">知春路</text>
+    <!-- 芍药居 (13号线/5号线) -->
+    <circle cx="480" cy="160" r="9" fill="#fff" stroke="#f9a825" stroke-width="3"/>
+    <text x="480" y="148" text-anchor="middle" font-size="10" fill="#f57f17">芍药居</text>
+  </g>
+
+  <!-- 中心标识 -->
+  <rect x="350" y="328" width="100" height="28" rx="6" fill="#1565c0"/>
+  <text x="400" y="347" text-anchor="middle" font-size="13" font-weight="bold" fill="#fff">10号线·环线</text>
+
+  <!-- 图例 -->
+  <rect x="40" y="580" width="720" height="48" rx="6" fill="#f8fafc" stroke="#e2e8f0"/>
+  <text x="60" y="600" font-size="10" fill="#64748b">图例：</text>
+  <line x1="105" y1="597" x2="135" y2="597" stroke="#1565c0" stroke-width="5"/>
+  <text x="142" y="601" font-size="10" fill="#64748b">10号线</text>
+  <line x1="195" y1="597" x2="225" y2="597" stroke="#c62828" stroke-width="5"/>
+  <text x="232" y="601" font-size="10" fill="#64748b">1号线</text>
+  <line x1="280" y1="597" x2="310" y2="597" stroke="#00897b" stroke-width="5"/>
+  <text x="317" y="601" font-size="10" fill="#64748b">4号线</text>
+  <line x1="365" y1="597" x2="395" y2="597" stroke="#6a1b9a" stroke-width="5"/>
+  <text x="402" y="601" font-size="10" fill="#64748b">5号线</text>
+  <line x1="450" y1="597" x2="480" y2="597" stroke="#f9a825" stroke-width="5"/>
+  <text x="487" y="601" font-size="10" fill="#64748b">13号线</text>
+  <text x="60" y="620" font-size="9" fill="#94a3b8">本图为路演演示拓扑示意图，非官方北京地铁线网图。仅标注10号线主要换乘站。</text>
+</svg>
