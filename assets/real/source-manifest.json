@@ -1,0 +1,182 @@
+{
+  "description": "智轨慧行项目素材来源清单 - 路演演示用",
+  "lastUpdated": "2026-07-06",
+  "usageNote": "页面素材与数据仅用于路演演示。AI建议仅供辅助，最终方案需由调度员复核确认。正式商用需替换为自有授权素材或运营单位授权资料。",
+  "assets": [
+    {
+      "name": "北京地铁10号线简化线路示意图",
+      "type": "image/svg+xml",
+      "localPath": "public/assets/real/line10-map.svg",
+      "sourceTitle": "自绘示意图",
+      "sourceUrl": "https://zh.wikipedia.org/wiki/北京地铁10号线",
+      "licenseNote": "根据北京地铁10号线公开站点信息自绘简化示意图，非官方线网图。站点名称与顺序参考北京地铁公开信息。",
+      "usedInPage": "首页驾驶舱、线路基础管理、路演模式、登录页",
+      "fallbackStrategy": "缺失时由 MetroMap 抽象节点图兜底"
+    },
+    {
+      "name": "北京地铁线网抽象示意图",
+      "type": "image/svg+xml",
+      "localPath": "public/assets/real/beijing-subway-map.svg",
+      "sourceTitle": "自绘拓扑示意图",
+      "sourceUrl": "https://zh.wikipedia.org/wiki/北京地铁",
+      "licenseNote": "线网拓扑抽象示意，非实际地理走向。展示10号线与1/2/4/5/13号线换乘关系。",
+      "usedInPage": "登录页、路演模式",
+      "fallbackStrategy": "使用 beijing-subway-network.svg 兜底"
+    },
+    {
+      "name": "北京地铁线网拓扑图(备用)",
+      "type": "image/svg+xml",
+      "localPath": "public/assets/real/beijing-subway-network.svg",
+      "sourceTitle": "自绘拓扑示意图",
+      "sourceUrl": "",
+      "licenseNote": "线网拓扑抽象示意，备用素材。",
+      "usedInPage": "登录页",
+      "fallbackStrategy": "缺失时使用 beijing-subway-map.svg"
+    },
+    {
+      "name": "10号线站台示意图",
+      "type": "image/svg+xml",
+      "localPath": "public/assets/real/line10-platform.svg",
+      "sourceTitle": "自绘占位图",
+      "sourceUrl": "",
+      "licenseNote": "模拟地铁站台场景，路演占位图。替换为真实调研照片请放入 public/assets/real/line10-platform.jpg。",
+      "usedInPage": "路演模式、报告页",
+      "fallbackStrategy": "缺失时显示文字占位"
+    },
+    {
+      "name": "北京地铁10号线列车示意图",
+      "type": "image/svg+xml",
+      "localPath": "public/assets/real/line10-train.svg",
+      "sourceTitle": "自绘占位图",
+      "sourceUrl": "",
+      "licenseNote": "模拟10号线列车外观，路演占位图。替换为真实照片请放入 public/assets/real/line10-train.jpg。",
+      "usedInPage": "路演模式、报告页",
+      "fallbackStrategy": "缺失时显示文字占位"
+    },
+    {
+      "name": "调度中心占位图",
+      "type": "image/svg+xml",
+      "localPath": "public/assets/real/dispatch-center-placeholder.svg",
+      "sourceTitle": "自绘占位图",
+      "sourceUrl": "",
+      "licenseNote": "模拟运营调度中心界面，用于路演演示。非真实照片。替换为真实照片请放入 public/assets/real/dispatch-center.jpg。",
+      "usedInPage": "首页驾驶舱、智能排班、路演模式",
+      "fallbackStrategy": "缺失时显示文字占位"
+    },
+    {
+      "name": "时刻表数据处理流程图",
+      "type": "image/svg+xml",
+      "localPath": "public/assets/real/timetable-sample.svg",
+      "sourceTitle": "自绘流程图",
+      "sourceUrl": "",
+      "licenseNote": "展示原始时刻表→清洗→乘务片段的数据处理流程，基于模拟时刻表数据自绘。",
+      "usedInPage": "时刻表管理页、路演模式",
+      "fallbackStrategy": "缺失时显示文字占位"
+    },
+    {
+      "name": "乘务片段划分规则校验流程图",
+      "type": "image/svg+xml",
+      "localPath": "public/assets/real/segment-rule-flow.svg",
+      "sourceTitle": "自绘流程图",
+      "sourceUrl": "",
+      "licenseNote": "展示片段划分→班型识别→间休校验→出退勤校验→合规结果的规则流程。",
+      "usedInPage": "乘务片段划分页、路演模式",
+      "fallbackStrategy": "缺失时显示文字占位"
+    },
+    {
+      "name": "应急重排影响范围图",
+      "type": "image/svg+xml",
+      "localPath": "public/assets/real/emergency-impact-range.svg",
+      "sourceTitle": "自绘示意图",
+      "sourceUrl": "",
+      "licenseNote": "展示事件触发后10号线环线受影响站点与替补建议方向，基于模拟事件数据。",
+      "usedInPage": "应急重排页、路演模式",
+      "fallbackStrategy": "缺失时显示文字占位"
+    },
+    {
+      "name": "数据与素材来源说明卡",
+      "type": "image/svg+xml",
+      "localPath": "public/assets/real/data-source-card.svg",
+      "sourceTitle": "自绘说明卡",
+      "sourceUrl": "",
+      "licenseNote": "汇总素材与数据来源的说明卡片。",
+      "usedInPage": "首页驾驶舱、路演模式",
+      "fallbackStrategy": "缺失时使用 DataSourceBadge 组件兜底"
+    },
+    {
+      "name": "北京地铁10号线站点数据",
+      "type": "application/json",
+      "localPath": "src/mock/beijingLine10.ts (stations)",
+      "sourceTitle": "北京地铁10号线公开站点列表",
+      "sourceUrl": "https://zh.wikipedia.org/wiki/北京地铁10号线",
+      "licenseNote": "45个站点名称与顺序参考Wikipedia公开信息，为公开知识。站点属性（出退勤点、车辆段等）为演示模拟。",
+      "usedInPage": "全站"
+    },
+    {
+      "name": "模拟时刻表数据",
+      "type": "application/json",
+      "localPath": "src/mock/beijingLine10.ts (timetableSamples)",
+      "sourceTitle": "北京地铁10号线运营时间公开信息",
+      "sourceUrl": "https://www.bjsubway.com/",
+      "licenseNote": "运营时间参考北京地铁公开信息，具体车次、服务号为模拟数据，不连接真实运营系统。",
+      "usedInPage": "时刻表管理页、排班工作流页、乘务片段划分页"
+    },
+    {
+      "name": "模拟乘务员数据",
+      "type": "application/json",
+      "localPath": "src/mock/beijingLine10.ts (crewSamples)",
+      "sourceTitle": "模拟数据",
+      "sourceUrl": "",
+      "licenseNote": "乘务员姓名、工号、工时等均为模拟数据，不涉及真实个人信息。",
+      "usedInPage": "智能排班页、疲劳风险页、应急重排页"
+    },
+    {
+      "name": "PR2003.xls 站名转换对照表",
+      "type": "application/json",
+      "localPath": "src/mock/beijingLine10.ts (stationCodeMap)",
+      "sourceTitle": "北京地铁公开站点信息",
+      "sourceUrl": "https://zh.wikipedia.org/wiki/北京地铁10号线",
+      "licenseNote": "站点名称与缩写基于公开信息整理。站名缩写为模拟PR2003.xls格式。",
+      "usedInPage": "时刻表管理页、排班工作流页"
+    }
+  ],
+  "externalReferences": [
+    {
+      "title": "北京地铁10号线 - Wikipedia",
+      "url": "https://zh.wikipedia.org/wiki/北京地铁10号线",
+      "type": "公开百科",
+      "note": "站点列表、线路长度、开通日期等公开知识"
+    },
+    {
+      "title": "北京地铁官方网站",
+      "url": "https://www.bjsubway.com/",
+      "type": "官方网站",
+      "note": "运营时间、线路图等公开信息"
+    },
+    {
+      "title": "北京市交通委员会",
+      "url": "https://jtw.beijing.gov.cn/",
+      "type": "政府网站",
+      "note": "轨道交通运营数据公开信息"
+    },
+    {
+      "title": "Wikimedia Commons - Beijing Subway",
+      "url": "https://commons.wikimedia.org/wiki/Category:Beijing_Subway",
+      "type": "公开图库",
+      "note": "可公开引用的站台/列车图片参考来源（CC协议），本项目未直接引用以规避版权风险"
+    },
+    {
+      "title": "GTFS / OpenStreetMap 公共交通数据",
+      "url": "https://wiki.openstreetmap.org/wiki/Beijing_Metro",
+      "type": "开放数据",
+      "note": "可参考的公共交通数据结构，本项目仅参考站点拓扑关系"
+    }
+  ],
+  "disclaimer": "本项目为前端路演演示系统，所有数据均为模拟或基于公开信息整理。不连接真实运营系统，不包含真实乘务员个人信息。如需真实运营数据，请联系北京地铁运营单位或北京市交通委获取授权。路演展示素材仅用于项目演示，正式商用需替换为自有授权素材或运营单位授权资料。",
+  "replacementGuide": {
+    "line10-train.jpg": "替换为真实10号线列车照片，放入 public/assets/real/line10-train.jpg 并更新 src/data/assets.ts 指向该文件",
+    "line10-platform.jpg": "替换为真实站台照片，放入 public/assets/real/line10-platform.jpg",
+    "dispatch-center.jpg": "替换为真实调度中心照片（脱敏后），放入 public/assets/real/dispatch-center.jpg",
+    "timetable-sheet.jpg": "替换为真实时刻表截图（脱敏后），放入 public/assets/real/timetable-sheet.jpg"
+  }
+}
